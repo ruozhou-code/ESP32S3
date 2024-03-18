@@ -5,19 +5,14 @@
 
 #include "led.h"
 #include "key.h"
+#include "EXTI.h"
 
 void app_main(void)
 {
     led_init();
-    key_init();
+    key_EXTI_init();
     while (1)
     {
-        Key_Scanf();
-        if (key_flag == 1)
-        {
-            printf("the key is pressed\r\n");
-            key_flag = 0;
-        }
         vTaskDelay(1);
     }
 }

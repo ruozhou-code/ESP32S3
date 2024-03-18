@@ -1,11 +1,14 @@
 set(src_dirs
     LED
     KEY
+    EXTI
 )
 
 set(include_dirs
     LED
-    KEY)
+    KEY
+    EXTI
+)
 
 set(requires
     driver)

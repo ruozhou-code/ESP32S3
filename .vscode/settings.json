@@ -17,6 +17,7 @@
     "idf.flashType": "UART",
     "files.associations": {
         "led.h": "c",
-        "key.h": "c"
+        "key.h": "c",
+        "exti.h": "c"
     }
 }
