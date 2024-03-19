@@ -2,12 +2,14 @@ set(src_dirs
     LED
     KEY
     EXTI
+    USART
 )
 
 set(include_dirs
     LED
     KEY
     EXTI
+    USART
 )
 
 set(requires
