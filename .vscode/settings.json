@@ -18,6 +18,7 @@
     "files.associations": {
         "led.h": "c",
         "key.h": "c",
-        "exti.h": "c"
+        "exti.h": "c",
+        "esp_timer.h": "c"
     }
 }

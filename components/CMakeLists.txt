@@ -3,6 +3,7 @@ set(src_dirs
     KEY
     EXTI
     USART
+    ESPTIM
 )
 
 set(include_dirs
@@ -10,10 +11,12 @@ set(include_dirs
     KEY
     EXTI
     USART
+    ESPTIM
 )
 
 set(requires
-    driver)
+    driver
+    esp_timer)
 
 idf_component_register(SRC_DIRS ${src_dirs} INCLUDE_DIRS ${include_dirs} REQUIRES ${requires})
 

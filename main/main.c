@@ -7,6 +7,7 @@
 #include "key.h"
 #include "EXTI.h"
 #include "usart.h"
+#include "esptim.h"
 
 void app_main(void)
 {
@@ -25,7 +26,7 @@ void app_main(void)
     led_init();
     key_EXTI_init();
     usart_init(115200);
-
+    esp_int_init(5000, 1000000);
     while (1)
     {
         uart_get_buffered_data_len(UART_NUM_0, (size_t*)&len);
@@ -48,8 +49,9 @@ void app_main(void)
             {
                 printf("请输入数据，以回车键结束\n");
             }
-            if (time % 30 == 0)
-                LED_TROGGLE();
+            //if (time % 30 == 0)
+                //LED_TROGGLE();
+
         }
         vTaskDelay(10);
     }
