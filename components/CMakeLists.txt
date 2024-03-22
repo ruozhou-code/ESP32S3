@@ -4,6 +4,7 @@ set(src_dirs
     EXTI
     USART
     ESPTIM
+    GPTIM
 )
 
 set(include_dirs
@@ -12,6 +13,7 @@ set(include_dirs
     EXTI
     USART
     ESPTIM
+    GPTIM
 )
 
 set(requires
